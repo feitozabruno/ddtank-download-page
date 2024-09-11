@@ -1,0 +1,399 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: 'Jumble';
+  src: url('../fonts/Jumble.ttf') format('truetype');
+  font-display: swap;
+}
+
+body,
+button,
+input,
+textarea {
+  font-size: 1.6rem;
+  font-family: 'Jumble', sans-serif;
+  --webkit-font-smoothing: antialiased;
+}
+
+:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2px transparent;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  background: none;
+  line-height: 0;
+  cursor: pointer;
+}
+
+body {
+  background-image: url(../img/bg.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  text-align: center;
+  margin-top: 1rem;
+
+  img {
+    width: 15.1rem;
+    height: 9.7rem;
+    transition: 300ms;
+
+    &:hover {
+      transform: scale(1.1);
+      filter: brightness(1.2);
+    }
+  }
+}
+
+.headline {
+  img {
+    width: 32.1rem;
+    height: 4.1rem;
+
+    margin-top: -6rem;
+    margin-bottom: 1rem;
+  }
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 2rem auto 0;
+  text-align: center;
+
+  background-image: url(../img/headline.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  width: 103.9rem;
+  height: 10.5rem;
+
+  .info {
+    p {
+      color: #fff;
+      font-size: 2rem;
+      line-height: 1.2;
+
+      text-shadow: -2px -2px 4px #0e1a47, 2px -2px 4px #0e1a47,
+        -2px 2px 4px #0e1a47, 2px 2px 4px #0e1a47;
+
+      lime {
+        color: rgb(155, 253, 0);
+      }
+    }
+
+    span {
+      display: block;
+      width: 50rem;
+
+      margin: 1rem auto -5rem auto;
+
+      color: #063435;
+      font-size: 1.4rem;
+
+      background: linear-gradient(
+        180deg,
+        rgba(4, 212, 20, 1) 0%,
+        rgba(155, 253, 0, 1) 90%
+      );
+
+      border-radius: 999px;
+      border: 2px solid #013b1d;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 3rem;
+
+  .desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(../img/window.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: relative;
+
+    width: 86.9rem;
+    height: 63.4rem;
+
+    h3 {
+      position: absolute;
+      top: 10px;
+      left: 5rem;
+
+      font-weight: normal;
+
+      font-size: 2rem;
+      color: #fff;
+      text-shadow: -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000,
+        2px 2px 1px #000;
+    }
+
+    a {
+      transition: 300ms;
+
+      &:hover {
+        transform: scale(1.1);
+        filter: brightness(1.3);
+
+        p {
+          transition: 200ms;
+          filter: brightness(0.8);
+          text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+            1px 1px 0 #000;
+        }
+      }
+    }
+
+    .url {
+      position: absolute;
+      top: 64px;
+      left: 5rem;
+
+      font-weight: normal;
+
+      font-size: 1.6rem;
+      color: #597786;
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      margin-top: 8rem;
+
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 28rem;
+      height: 41.4rem;
+      position: relative;
+
+      a {
+        transition: 300ms;
+
+        &:active {
+          transform: scale(1.1);
+          filter: brightness(1.3);
+        }
+      }
+
+      .content {
+        margin-top: 5rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        a + a {
+          margin-top: 1rem;
+        }
+
+        h2 {
+          color: #fff;
+          font-size: 2rem;
+          font-weight: normal;
+          margin-bottom: 1rem;
+
+          text-shadow: -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000,
+            2px 2px 1px #000;
+        }
+
+        .btn-base {
+          background-size: contain;
+          background-repeat: no-repeat;
+          width: 23.6rem;
+          height: 6.8rem;
+          cursor: pointer;
+          position: relative;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          p {
+            color: #fff;
+            text-align: center;
+          }
+        }
+
+        .btn-base + .btn-base {
+          margin-top: 2rem;
+        }
+      }
+    }
+
+    .card1 {
+      background-image: url(../img/card1.webp);
+
+      p {
+        font-size: 1.4rem;
+        line-height: 1.2;
+        margin-left: 4.5rem;
+      }
+
+      .botao1 {
+        background-image: url(../img/card1-botao1.webp);
+      }
+
+      .botao2 {
+        background-image: url(../img/card1-botao2.webp);
+      }
+
+      .botao3 {
+        background-image: url(../img/card1-botao3.webp);
+      }
+    }
+
+    .card2 {
+      background-image: url(../img/card2.webp);
+
+      p {
+        line-height: 1;
+        margin-left: 4rem;
+      }
+
+      .botao1 {
+        background-image: url(../img/card1-botao1.webp);
+      }
+
+      .botao2 {
+        background-image: url(../img/card1-botao2.webp);
+      }
+
+      .botao3 {
+        background-image: url(../img/card2-botao3.webp);
+
+        p {
+          top: 1.5rem;
+          left: 8.4rem;
+          line-height: 1.2;
+        }
+      }
+    }
+
+    .card3 {
+      background-image: url(../img/card3.webp);
+
+      .content {
+        h2 {
+          margin-top: 2.5rem;
+        }
+
+        a {
+          margin-top: -1rem;
+        }
+
+        .btn-base + .btn-base {
+          margin-top: 0.5rem;
+        }
+      }
+
+      p {
+        font-size: 1.4rem;
+        line-height: 1.2;
+        margin-left: 3.5rem;
+      }
+
+      .botao1 {
+        background-image: url(../img/card3-botao1.webp);
+      }
+
+      .botao2 {
+        background-image: url(../img/card3-botao2.webp);
+      }
+
+      .botao3 {
+        background-image: url(../img/card3-botao3.webp);
+      }
+
+      .botao4 {
+        background-image: url(../img/card3-botao4.webp);
+      }
+    }
+  }
+
+  .mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-image: url(../img/iphone.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 29.4rem;
+    height: 63.4rem;
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      width: 23rem;
+      height: 10rem;
+
+      padding: 1rem;
+      margin-top: 6rem;
+      margin-bottom: 2rem;
+
+      font-size: 2rem;
+      text-align: center;
+      color: #fff;
+      text-shadow: -2px -2px 4px #0b425e, 2px -2px 4px #0b425e,
+        -2px 2px 4px #0b425e, 2px 2px 4px #0b425e;
+
+      background-image: url(../img/frame.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .divisor {
+      margin-bottom: 1.5rem;
+    }
+
+    img {
+      width: 23.5rem;
+      margin-left: 1rem;
+    }
+  }
+}
