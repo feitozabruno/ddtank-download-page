@@ -47,21 +47,20 @@ body {
   background-repeat: no-repeat;
 }
 
-.logo {
+.pc .logo {
   text-align: center;
   margin-top: 1rem;
 }
-.logo img {
+.pc .logo img {
   width: 15.1rem;
   height: 9.7rem;
   transition: 300ms;
 }
-.logo img:hover {
+.pc .logo img:hover {
   transform: scale(1.1);
   filter: brightness(1.2);
 }
-
-.headline {
+.pc .headline {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,22 +74,22 @@ body {
   width: 103.9rem;
   height: 10.5rem;
 }
-.headline img {
+.pc .headline img {
   width: 32.1rem;
   height: 4.1rem;
   margin-top: -6rem;
   margin-bottom: 1rem;
 }
-.headline .info p {
+.pc .headline .info p {
   color: #fff;
   font-size: 2rem;
   line-height: 1.2;
   text-shadow: -2px -2px 4px #0e1a47, 2px -2px 4px #0e1a47, -2px 2px 4px #0e1a47, 2px 2px 4px #0e1a47;
 }
-.headline .info p lime {
+.pc .headline .info p lime {
   color: rgb(155, 253, 0);
 }
-.headline .info span {
+.pc .headline .info span {
   display: block;
   width: 50rem;
   margin: 1rem auto -5rem auto;
@@ -100,15 +99,14 @@ body {
   border-radius: 999px;
   border: 2px solid #013b1d;
 }
-
-.container {
+.pc .container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-top: 3rem;
 }
-.container .desktop {
+.pc .container .desktop {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -120,74 +118,75 @@ body {
   position: relative;
   width: 86.9rem;
   height: 63.4rem;
+  margin-right: 1rem;
 }
-.container .desktop h3 {
+.pc .container .desktop h3 {
   position: absolute;
   top: 10px;
   left: 5rem;
-  font-weight: normal;
-  font-size: 2rem;
   color: #fff;
+  font-size: 2rem;
+  font-weight: normal;
   text-shadow: -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000, 2px 2px 1px #000;
 }
-.container .desktop a {
+.pc .container .desktop a {
   transition: 300ms;
 }
-.container .desktop a:hover {
+.pc .container .desktop a:hover {
   transform: scale(1.1);
   filter: brightness(1.3);
 }
-.container .desktop a:hover p {
+.pc .container .desktop a:hover p {
   transition: 200ms;
   filter: brightness(0.8);
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
-.container .desktop .url {
+.pc .container .desktop .url {
   position: absolute;
   top: 64px;
   left: 5rem;
-  font-weight: normal;
-  font-size: 1.6rem;
   color: #597786;
+  font-size: 1.6rem;
+  font-weight: normal;
 }
-.container .desktop .cards {
+.pc .container .desktop .cardbase {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   margin-top: 8rem;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   width: 28rem;
   height: 41.4rem;
-  position: relative;
 }
-.container .desktop .cards a {
+.pc .container .desktop .cardbase a {
   transition: 300ms;
 }
-.container .desktop .cards a:active {
+.pc .container .desktop .cardbase a:active {
   transform: scale(1.1);
   filter: brightness(1.3);
 }
-.container .desktop .cards .content {
+.pc .container .desktop .cardbase .content {
   margin-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.container .desktop .cards .content a + a {
+.pc .container .desktop .cardbase .content a + a {
   margin-top: 1rem;
 }
-.container .desktop .cards .content h2 {
+.pc .container .desktop .cardbase .content h2 {
   color: #fff;
   font-size: 2rem;
   font-weight: normal;
-  margin-bottom: 1rem;
   text-shadow: -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000, 2px 2px 1px #000;
+  margin-bottom: 1rem;
 }
-.container .desktop .cards .content .btn-base {
+.pc .container .desktop .cardbase .content .btn-base {
   background-size: contain;
   background-repeat: no-repeat;
   width: 23.6rem;
@@ -198,81 +197,81 @@ body {
   justify-content: center;
   align-items: center;
 }
-.container .desktop .cards .content .btn-base p {
+.pc .container .desktop .cardbase .content .btn-base p {
   color: #fff;
   text-align: center;
 }
-.container .desktop .cards .content .btn-base + .btn-base {
+.pc .container .desktop .cardbase .content .btn-base + .btn-base {
   margin-top: 2rem;
 }
-.container .desktop .card1 {
+.pc .container .desktop .card1 {
   background-image: url(../img/card1.webp);
 }
-.container .desktop .card1 p {
+.pc .container .desktop .card1 p {
   font-size: 1.4rem;
   line-height: 1.2;
   margin-left: 4.5rem;
 }
-.container .desktop .card1 .botao1 {
+.pc .container .desktop .card1 .botao1 {
   background-image: url(../img/card1-botao1.webp);
 }
-.container .desktop .card1 .botao2 {
+.pc .container .desktop .card1 .botao2 {
   background-image: url(../img/card1-botao2.webp);
 }
-.container .desktop .card1 .botao3 {
+.pc .container .desktop .card1 .botao3 {
   background-image: url(../img/card1-botao3.webp);
 }
-.container .desktop .card2 {
+.pc .container .desktop .card2 {
   background-image: url(../img/card2.webp);
 }
-.container .desktop .card2 p {
+.pc .container .desktop .card2 p {
   line-height: 1;
   margin-left: 4rem;
 }
-.container .desktop .card2 .botao1 {
+.pc .container .desktop .card2 .botao1 {
   background-image: url(../img/card1-botao1.webp);
 }
-.container .desktop .card2 .botao2 {
+.pc .container .desktop .card2 .botao2 {
   background-image: url(../img/card1-botao2.webp);
 }
-.container .desktop .card2 .botao3 {
+.pc .container .desktop .card2 .botao3 {
   background-image: url(../img/card2-botao3.webp);
 }
-.container .desktop .card2 .botao3 p {
+.pc .container .desktop .card2 .botao3 p {
   top: 1.5rem;
   left: 8.4rem;
   line-height: 1.2;
 }
-.container .desktop .card3 {
+.pc .container .desktop .card3 {
   background-image: url(../img/card3.webp);
 }
-.container .desktop .card3 .content h2 {
+.pc .container .desktop .card3 .content h2 {
   margin-top: 2.5rem;
 }
-.container .desktop .card3 .content a {
+.pc .container .desktop .card3 .content a {
   margin-top: -1rem;
 }
-.container .desktop .card3 .content .btn-base + .btn-base {
+.pc .container .desktop .card3 .content .btn-base + .btn-base {
   margin-top: 0.5rem;
 }
-.container .desktop .card3 p {
+.pc .container .desktop .card3 p {
   font-size: 1.4rem;
   line-height: 1.2;
   margin-left: 3.5rem;
 }
-.container .desktop .card3 .botao1 {
+.pc .container .desktop .card3 .botao1 {
   background-image: url(../img/card3-botao1.webp);
 }
-.container .desktop .card3 .botao2 {
+.pc .container .desktop .card3 .botao2 {
   background-image: url(../img/card3-botao2.webp);
 }
-.container .desktop .card3 .botao3 {
+.pc .container .desktop .card3 .botao3 {
   background-image: url(../img/card3-botao3.webp);
 }
-.container .desktop .card3 .botao4 {
+.pc .container .desktop .card3 .botao4 {
   background-image: url(../img/card3-botao4.webp);
 }
-.container .mobile {
+.pc .container .mobile {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -284,7 +283,7 @@ body {
   width: 29.4rem;
   height: 63.4rem;
 }
-.container .mobile header {
+.pc .container .mobile header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -294,19 +293,270 @@ body {
   padding: 1rem;
   margin-top: 6rem;
   margin-bottom: 2rem;
-  font-size: 2rem;
   text-align: center;
   color: #fff;
+  font-size: 2rem;
   text-shadow: -2px -2px 4px #0b425e, 2px -2px 4px #0b425e, -2px 2px 4px #0b425e, 2px 2px 4px #0b425e;
   background-image: url(../img/frame.webp);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
-.container .mobile .divisor {
+.pc .container .mobile .divisor {
   margin-bottom: 1.5rem;
 }
-.container .mobile img {
+.pc .container .mobile img {
   width: 23.5rem;
   margin-left: 1rem;
+}
+
+.phone {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  body {
+    background-size: cover;
+    background-image: url(../img/bg-mobile.webp);
+    background-position: top;
+  }
+  .pc {
+    display: none;
+  }
+  .phone {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .phone .headline-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40rem;
+    height: 6.7rem;
+    margin: 3rem auto 0;
+    text-align: center;
+    background-image: url(../img/frame-mobile.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .phone .headline-mobile img {
+    width: 25rem;
+    height: 2.9rem;
+    margin-top: -3rem;
+    margin-bottom: 0.5rem;
+  }
+  .phone .headline-mobile p {
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    text-shadow: -2px -2px 4px #0e1a47, 2px -2px 4px #0e1a47, -2px 2px 4px #0e1a47, 2px 2px 4px #0e1a47;
+    width: 35rem;
+  }
+  .phone .headline-mobile p lime {
+    color: rgb(155, 253, 0);
+  }
+  .phone .device {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 1rem;
+    text-align: center;
+    width: 40rem;
+    height: 72.4rem;
+    background-image: url(../img/iphone-mobile.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    font-size: 1.8rem;
+    text-shadow: -2px -2px 4px #1e2533, 2px -2px 4px #1e2533, -2px 2px 4px #1e2533, 2px 2px 4px #1e2533;
+  }
+  .phone .device .table {
+    margin-left: 1rem;
+    text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .phone .device .table + .table {
+    margin-top: 0.5rem;
+  }
+  .phone .device header.android {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+  }
+  .phone .device header.android img.icon {
+    width: 4rem;
+    height: 4.5rem;
+    margin-top: 1.5rem;
+    margin-left: 1.2rem;
+  }
+  .phone .device header.android img.os {
+    width: calc(100% - 10rem);
+    margin-top: 1rem;
+    margin-right: 2rem;
+  }
+  .phone .device header.android span {
+    position: absolute;
+    top: 17px;
+    left: 95px;
+    color: #fff;
+    font-size: 2.4rem;
+    text-shadow: -2px -2px 4px #1e2533, 2px -2px 4px #1e2533, -2px 2px 4px #1e2533, 2px 2px 4px #1e2533;
+  }
+  .phone .device a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 1.8rem;
+    text-shadow: -2px -2px 4px #1e2533, 2px -2px 4px #1e2533, -2px 2px 4px #1e2533, 2px 2px 4px #1e2533;
+  }
+  .phone .device a.apk {
+    margin-top: 2.5rem;
+    width: 32rem;
+    height: 3.8rem;
+    background-image: url(../img/down-apk.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .phone .device a.apk lime {
+    color: rgb(155, 253, 0);
+  }
+  .phone .device p.divider {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  .phone .device a.playstore {
+    font-size: 2rem;
+    width: 32rem;
+    height: 7.5rem;
+    background-image: url(../img/store-btn.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .phone .device a.playstore img {
+    width: 4rem;
+    height: 4.2rem;
+    margin-right: 1rem;
+  }
+  .phone .device .table1 {
+    background-image: url(../img/table-mobile.webp);
+    margin-top: 2.5rem;
+    width: 34rem;
+    height: 32rem;
+  }
+  .phone .device .table2 {
+    background-image: url(../img/appstore-bg.webp);
+    width: 34rem;
+    height: 25.7rem;
+  }
+  .phone .device .table2 header.appstore {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+  }
+  .phone .device .table2 header.appstore img.icon {
+    width: 4rem;
+    height: 4.5rem;
+    margin-top: 1rem;
+    margin-left: 1.2rem;
+  }
+  .phone .device .table2 header.appstore img.os {
+    width: calc(100% - 10rem);
+    margin-top: 1.5rem;
+    margin-right: 2rem;
+  }
+  .phone .device .table2 header.appstore span {
+    position: absolute;
+    top: 17px;
+    left: 95px;
+    color: #fff;
+    font-size: 2.4rem;
+    text-shadow: -2px -2px 4px #1e2533, 2px -2px 4px #1e2533, -2px 2px 4px #1e2533, 2px 2px 4px #1e2533;
+  }
+  .phone .device .table2 a.app {
+    margin-top: 2.5rem;
+    width: 32rem;
+    height: 3.8rem;
+    background-image: url(../img/down-apk.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .phone .device .table2 a.app cyan {
+    color: #01d5c3;
+  }
+  .phone .device .table2 a.storeapp {
+    font-size: 2rem;
+    width: 32rem;
+    height: 7.5rem;
+    background-image: url(../img/store-btn.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .phone .device .table2 a.storeapp img {
+    width: 4rem;
+    height: 4.2rem;
+    margin-right: 1rem;
+  }
+  .phone .device .pc-btn {
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 0.6rem;
+    margin-top: 1rem;
+    position: relative;
+  }
+  .phone .device .pc-btn img {
+    width: 34rem;
+    height: 5.3rem;
+  }
+  .phone .device .pc-btn span {
+    position: absolute;
+    top: 0.8rem;
+    left: 5.5rem;
+    font-size: 2.2rem;
+  }
+  .phone .device .pc-btn span blue {
+    color: #00e4ff;
+  }
+  .phone .logo-mobile {
+    margin-top: 1rem;
+  }
+  .phone .logo-mobile img {
+    width: 12rem;
+    height: 7.7rem;
+    transition: 300ms;
+  }
+  .phone .logo-mobile img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+  }
+  .phone .mascot {
+    position: absolute;
+    bottom: 0;
+    left: -15rem;
+    z-index: -999;
+  }
+  .phone .mascot img {
+    width: 35rem;
+    height: 31.1rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
