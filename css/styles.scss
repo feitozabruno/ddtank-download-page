@@ -428,6 +428,8 @@ body {
     align-items: center;
     justify-content: center;
 
+    min-height: 100vh;
+
     .headline-mobile {
       img {
         width: 25rem;
@@ -479,8 +481,8 @@ body {
       margin-top: 1rem;
       text-align: center;
 
-      width: 40rem;
-      height: 72.4rem;
+      width: 35rem;
+      height: 63.3rem;
 
       background-image: url(../img/iphone-mobile.webp);
       background-size: contain;
@@ -545,20 +547,20 @@ body {
           margin: 0 auto;
 
           color: #fff;
-          font-size: 1.8rem;
+          font-size: 1.6rem;
           text-shadow: -2px -2px 4px #1e2533, 2px -2px 4px #1e2533,
             -2px 2px 4px #1e2533, 2px 2px 4px #1e2533;
         }
 
         a.apk {
-          margin-top: 2.5rem;
+          margin-top: 1.8rem;
 
           lime {
             color: rgb(155, 253, 0);
           }
 
-          width: 32rem;
-          height: 3.8rem;
+          width: 28rem;
+          height: 3.3rem;
 
           background-image: url(../img/down-apk.webp);
           background-size: contain;
@@ -572,7 +574,7 @@ body {
         }
 
         a.playstore {
-          font-size: 2rem;
+          font-size: 1.8rem;
 
           img {
             width: 4rem;
@@ -581,8 +583,8 @@ body {
             margin-right: 1rem;
           }
 
-          width: 32rem;
-          height: 7.5rem;
+          width: 28rem;
+          height: 6.5rem;
 
           background-image: url(../img/store-btn.webp);
           background-size: contain;
@@ -631,8 +633,8 @@ body {
             color: #01d5c3;
           }
 
-          width: 32rem;
-          height: 3.8rem;
+          width: 28rem;
+          height: 3.3rem;
 
           background-image: url(../img/down-apk.webp);
           background-size: contain;
@@ -641,7 +643,7 @@ body {
         }
 
         a.storeapp {
-          font-size: 2rem;
+          font-size: 1.8rem;
 
           img {
             width: 4rem;
@@ -650,8 +652,8 @@ body {
             margin-right: 1rem;
           }
 
-          width: 32rem;
-          height: 7.5rem;
+          width: 28rem;
+          height: 6.5rem;
 
           background-image: url(../img/store-btn.webp);
           background-size: contain;
@@ -668,14 +670,14 @@ body {
         background-image: url(../img/table-mobile.webp);
 
         margin-top: 2.5rem;
-        width: 34rem;
-        height: 32rem;
+        width: 30rem;
+        height: 28.2rem;
       }
 
       .table2 {
         background-image: url(../img/appstore-bg.webp);
-        width: 34rem;
-        height: 25.7rem;
+        width: 30rem;
+        height: 22.6rem;
       }
 
       .pc-btn {
@@ -687,16 +689,17 @@ body {
         position: relative;
 
         img {
-          width: 34rem;
-          height: 5.3rem;
+          width: 30rem;
+          height: 4.6rem;
         }
 
         span {
           position: absolute;
-          top: 0.8rem;
-          left: 5.5rem;
+          top: 0.7rem;
+          left: 6rem;
 
-          font-size: 2.2rem;
+          font-size: 1.8rem;
+          color: #fff;
 
           blue {
             color: #00e4ff;
