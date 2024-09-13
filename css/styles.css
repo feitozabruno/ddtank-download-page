@@ -335,6 +335,14 @@ body {
     justify-content: center;
     min-height: 100vh;
   }
+  .phone a {
+    transition: 300ms;
+  }
+  .phone a:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+    transition: 200ms;
+  }
   .phone .headline-mobile {
     display: flex;
     flex-direction: column;

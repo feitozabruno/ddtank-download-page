@@ -430,6 +430,17 @@ body {
 
     min-height: 100vh;
 
+    a {
+      transition: 300ms;
+
+      &:hover {
+        transform: scale(1.1);
+        filter: brightness(1.1);
+
+        transition: 200ms;
+      }
+    }
+
     .headline-mobile {
       img {
         width: 25rem;
