@@ -314,19 +314,21 @@ body {
   display: none;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1150px) {
+  .pc {
+    display: none;
+  }
   body {
     background-size: cover;
     background-image: url(../img/bg-mobile.webp);
     background-position: top;
   }
-  .pc {
-    display: none;
-  }
   .phone {
     margin: 0 auto;
     width: 100%;
     position: relative;
+    padding-left: 1rem;
+    padding-right: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -387,27 +389,24 @@ body {
     background-repeat: no-repeat;
     background-position: center;
   }
-  .phone .device .table + .table {
-    margin-top: 0.5rem;
-  }
-  .phone .device header.android {
+  .phone .device .table header.android {
     display: flex;
     align-items: center;
     justify-content: space-around;
     position: relative;
   }
-  .phone .device header.android img.icon {
+  .phone .device .table header.android img.icon {
     width: 4rem;
     height: 4.5rem;
     margin-top: 1.5rem;
     margin-left: 1.2rem;
   }
-  .phone .device header.android img.os {
+  .phone .device .table header.android img.os {
     width: calc(100% - 10rem);
     margin-top: 1rem;
     margin-right: 2rem;
   }
-  .phone .device header.android span {
+  .phone .device .table header.android span {
     position: absolute;
     top: 17px;
     left: 95px;
@@ -415,7 +414,7 @@ body {
     font-size: 2.4rem;
     text-shadow: -2px -2px 4px #1e2533, 2px -2px 4px #1e2533, -2px 2px 4px #1e2533, 2px 2px 4px #1e2533;
   }
-  .phone .device a {
+  .phone .device .table a {
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -425,7 +424,7 @@ body {
     font-size: 1.8rem;
     text-shadow: -2px -2px 4px #1e2533, 2px -2px 4px #1e2533, -2px 2px 4px #1e2533, 2px 2px 4px #1e2533;
   }
-  .phone .device a.apk {
+  .phone .device .table a.apk {
     margin-top: 2.5rem;
     width: 32rem;
     height: 3.8rem;
@@ -434,14 +433,14 @@ body {
     background-repeat: no-repeat;
     background-position: center;
   }
-  .phone .device a.apk lime {
+  .phone .device .table a.apk lime {
     color: rgb(155, 253, 0);
   }
-  .phone .device p.divider {
+  .phone .device .table p.divider {
     margin-top: 4px;
     margin-bottom: 4px;
   }
-  .phone .device a.playstore {
+  .phone .device .table a.playstore {
     font-size: 2rem;
     width: 32rem;
     height: 7.5rem;
@@ -450,10 +449,64 @@ body {
     background-repeat: no-repeat;
     background-position: center;
   }
-  .phone .device a.playstore img {
+  .phone .device .table a.playstore img {
     width: 4rem;
     height: 4.2rem;
     margin-right: 1rem;
+  }
+  .phone .device .table header.appstore {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+  }
+  .phone .device .table header.appstore img.icon {
+    width: 4rem;
+    height: 4.5rem;
+    margin-top: 1rem;
+    margin-left: 1.2rem;
+  }
+  .phone .device .table header.appstore img.os {
+    width: calc(100% - 10rem);
+    margin-top: 1.5rem;
+    margin-right: 2rem;
+  }
+  .phone .device .table header.appstore span {
+    position: absolute;
+    top: 17px;
+    left: 95px;
+    color: #fff;
+    font-size: 2.4rem;
+    text-shadow: -2px -2px 4px #1e2533, 2px -2px 4px #1e2533, -2px 2px 4px #1e2533, 2px 2px 4px #1e2533;
+  }
+  .phone .device .table a.app {
+    margin-top: 2.5rem;
+    width: 32rem;
+    height: 3.8rem;
+    background-image: url(../img/down-apk.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .phone .device .table a.app cyan {
+    color: #01d5c3;
+  }
+  .phone .device .table a.storeapp {
+    font-size: 2rem;
+    width: 32rem;
+    height: 7.5rem;
+    background-image: url(../img/store-btn.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .phone .device .table a.storeapp img {
+    width: 4rem;
+    height: 4.2rem;
+    margin-right: 1rem;
+  }
+  .phone .device .table + .table {
+    margin-top: 0.5rem;
   }
   .phone .device .table1 {
     background-image: url(../img/table-mobile.webp);
@@ -465,57 +518,6 @@ body {
     background-image: url(../img/appstore-bg.webp);
     width: 34rem;
     height: 25.7rem;
-  }
-  .phone .device .table2 header.appstore {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    position: relative;
-  }
-  .phone .device .table2 header.appstore img.icon {
-    width: 4rem;
-    height: 4.5rem;
-    margin-top: 1rem;
-    margin-left: 1.2rem;
-  }
-  .phone .device .table2 header.appstore img.os {
-    width: calc(100% - 10rem);
-    margin-top: 1.5rem;
-    margin-right: 2rem;
-  }
-  .phone .device .table2 header.appstore span {
-    position: absolute;
-    top: 17px;
-    left: 95px;
-    color: #fff;
-    font-size: 2.4rem;
-    text-shadow: -2px -2px 4px #1e2533, 2px -2px 4px #1e2533, -2px 2px 4px #1e2533, 2px 2px 4px #1e2533;
-  }
-  .phone .device .table2 a.app {
-    margin-top: 2.5rem;
-    width: 32rem;
-    height: 3.8rem;
-    background-image: url(../img/down-apk.webp);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .phone .device .table2 a.app cyan {
-    color: #01d5c3;
-  }
-  .phone .device .table2 a.storeapp {
-    font-size: 2rem;
-    width: 32rem;
-    height: 7.5rem;
-    background-image: url(../img/store-btn.webp);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .phone .device .table2 a.storeapp img {
-    width: 4rem;
-    height: 4.2rem;
-    margin-right: 1rem;
   }
   .phone .device .pc-btn {
     width: 100%;

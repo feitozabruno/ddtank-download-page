@@ -404,22 +404,24 @@ body {
   display: none;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1150px) {
+  .pc {
+    display: none;
+  }
+
   body {
     background-size: cover;
     background-image: url(../img/bg-mobile.webp);
     background-position: top;
-    // background-position: left;
-  }
-
-  .pc {
-    display: none;
   }
 
   .phone {
     margin: 0 auto;
     width: 100%;
     position: relative;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
 
     display: flex;
     flex-direction: column;
@@ -498,113 +500,95 @@ body {
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-      }
 
-      .table + .table {
-        margin-top: 0.5rem;
-      }
+        header.android {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          position: relative;
 
-      header.android {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        position: relative;
+          img.icon {
+            width: 4rem;
+            height: 4.5rem;
 
-        img.icon {
-          width: 4rem;
-          height: 4.5rem;
+            margin-top: 1.5rem;
+            margin-left: 1.2rem;
+          }
 
-          margin-top: 1.5rem;
-          margin-left: 1.2rem;
+          img.os {
+            width: calc(100% - 10rem);
+            margin-top: 1rem;
+            margin-right: 2rem;
+          }
+
+          span {
+            position: absolute;
+
+            top: 17px;
+            left: 95px;
+
+            color: #fff;
+            font-size: 2.4rem;
+
+            text-shadow: -2px -2px 4px #1e2533, 2px -2px 4px #1e2533,
+              -2px 2px 4px #1e2533, 2px 2px 4px #1e2533;
+          }
         }
 
-        img.os {
-          width: calc(100% - 10rem);
-          margin-top: 1rem;
-          margin-right: 2rem;
-        }
+        a {
+          text-decoration: none;
 
-        span {
-          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: center;
 
-          top: 17px;
-          left: 95px;
+          margin: 0 auto;
 
           color: #fff;
-          font-size: 2.4rem;
-
+          font-size: 1.8rem;
           text-shadow: -2px -2px 4px #1e2533, 2px -2px 4px #1e2533,
             -2px 2px 4px #1e2533, 2px 2px 4px #1e2533;
         }
-      }
 
-      a {
-        text-decoration: none;
+        a.apk {
+          margin-top: 2.5rem;
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
+          lime {
+            color: rgb(155, 253, 0);
+          }
 
-        margin: 0 auto;
+          width: 32rem;
+          height: 3.8rem;
 
-        color: #fff;
-        font-size: 1.8rem;
-        text-shadow: -2px -2px 4px #1e2533, 2px -2px 4px #1e2533,
-          -2px 2px 4px #1e2533, 2px 2px 4px #1e2533;
-      }
-
-      a.apk {
-        margin-top: 2.5rem;
-
-        lime {
-          color: rgb(155, 253, 0);
+          background-image: url(../img/down-apk.webp);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
         }
 
-        width: 32rem;
-        height: 3.8rem;
-
-        background-image: url(../img/down-apk.webp);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-      }
-
-      p.divider {
-        margin-top: 4px;
-        margin-bottom: 4px;
-      }
-
-      a.playstore {
-        font-size: 2rem;
-
-        img {
-          width: 4rem;
-          height: 4.2rem;
-
-          margin-right: 1rem;
+        p.divider {
+          margin-top: 4px;
+          margin-bottom: 4px;
         }
 
-        width: 32rem;
-        height: 7.5rem;
+        a.playstore {
+          font-size: 2rem;
 
-        background-image: url(../img/store-btn.webp);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-      }
+          img {
+            width: 4rem;
+            height: 4.2rem;
 
-      .table1 {
-        background-image: url(../img/table-mobile.webp);
+            margin-right: 1rem;
+          }
 
-        margin-top: 2.5rem;
-        width: 34rem;
-        height: 32rem;
-      }
+          width: 32rem;
+          height: 7.5rem;
 
-      .table2 {
-        background-image: url(../img/appstore-bg.webp);
-        width: 34rem;
-        height: 25.7rem;
+          background-image: url(../img/store-btn.webp);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
 
         header.appstore {
           display: flex;
@@ -674,6 +658,24 @@ body {
           background-repeat: no-repeat;
           background-position: center;
         }
+      }
+
+      .table + .table {
+        margin-top: 0.5rem;
+      }
+
+      .table1 {
+        background-image: url(../img/table-mobile.webp);
+
+        margin-top: 2.5rem;
+        width: 34rem;
+        height: 32rem;
+      }
+
+      .table2 {
+        background-image: url(../img/appstore-bg.webp);
+        width: 34rem;
+        height: 25.7rem;
       }
 
       .pc-btn {
